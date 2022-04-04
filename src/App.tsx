@@ -16,7 +16,11 @@ function App() {
   const onClickHandler = () => {
     dispatch({type:"ADD", payload: activity})
   }
- let displayList= activities? activities.map((el)=> <p key={Math.random()}>{el}</p>) : "";
+
+ const deleteHandler = (item: string) =>{
+   dispatch({type:"REMOVE", payload: item })
+ }
+ let displayList= activities? activities.map((el)=> <p key={Math.random()} onClick={() => deleteHandler(el)}>{el}</p>) : "";
 
   return (
     <div className="App">
