@@ -15,6 +15,7 @@ function App() {
 
   const onClickHandler = () => {
     dispatch({type:"ADD", payload: activity})
+    setActivity("")
   }
 
  const deleteHandler = (item: string) =>{
