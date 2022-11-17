@@ -1,4 +1,4 @@
-# Get data from API with Redux
+# ToDoList2 with Redux
 
 <img src="./readme_images/ToDoList.png" alt="project image">
 <br />
